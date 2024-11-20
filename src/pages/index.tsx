@@ -23,7 +23,6 @@ const Home = (): React.ReactElement => {
 							and I'm always looking to transform ideas into innovative technological solutions that generate impact.
 						</h2>
 					</div>
-					<div/>
 				</div>
 			</section>
 		</div>
