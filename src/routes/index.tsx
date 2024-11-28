@@ -5,7 +5,7 @@ const Routes = (): React.ReactElement => {
 	return (
 		<BrowserRouter>
 			<RoutesDom>
-				<Route path="/" element={ <Home /> } />
+				<Route path="/portfolio" element={ <Home /> } />
 			</RoutesDom>
 		</BrowserRouter>
 	);
