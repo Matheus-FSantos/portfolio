@@ -32,11 +32,6 @@ import {
 	CentosOriginal
 } from 'devicons-react';
 
-import { Canvas } from '@react-three/fiber'
-import Ipad from "../../Ipad";
-import { Suspense } from "react";
-import { OrbitControls } from "@react-three/drei";
-
 
 const Home = (): React.ReactElement => {
 	return (
@@ -196,26 +191,6 @@ const Home = (): React.ReactElement => {
 								<NpmOriginalWordmark size={42} />
 							</div>
 						</div>
-					</div>
-				</section>
-				<section className="pb-16 h-50 flex sm:h-96">
-					<div className="h-full w-full sm:w-1/2">
-						<Canvas>
-							<ambientLight intensity={100} />
-							<OrbitControls enableZoom={ false }/>
-							<Suspense fallback={ null }>
-								<Ipad />
-							</Suspense>
-						</Canvas>
-					</div>
-					<div className="hidden sm:block sm:h-full sm:w-1/2">
-						<Canvas>
-							<ambientLight intensity={100} />
-							<OrbitControls enableZoom={ false }/>
-							<Suspense fallback={ null }>
-								<Ipad />
-							</Suspense>
-						</Canvas>
 					</div>
 				</section>
 			</GlobalPadding>
