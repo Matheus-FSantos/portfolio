@@ -4,6 +4,20 @@ export default {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
+			animation: {
+				"loop-scroll": "loop-scroll 30s linear infinite",
+				"loop-scroll-inverse": "loop-scroll-inverse 30s linear infinite"
+			},
+			keyframes: {
+				"loop-scroll": {
+					from: { transform: "translateX(0)"},
+					to: { transform: "translateX(-100%)"}
+				},
+				"loop-scroll-inverse": {
+					from: { transform: "translateX(-100%)"},
+					to: { transform: "translateX(0%)"}
+				}
+			},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

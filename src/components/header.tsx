@@ -19,7 +19,7 @@ const Header = (): React.ReactElement => {
 	}
 
 	return (
-		<div className={`${ heightMenuState } bg-white/0 backdrop-blur-sm sticky top-0 left-0`}>
+		<div className={`${ heightMenuState } px-5 backdrop-blur-sm max-w-[1920px] w-full mx-auto my-0 bg-white/0 sticky top-0 left-0 z-50 sm:px-10`}>
 			<div className="flex items-center justify-between w-full py-7 relative">
 				<Link to="https://github.com/Matheus-FSantos" target="__blank">
 					<Github />
